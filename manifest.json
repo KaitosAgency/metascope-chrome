@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "MetaScope",
+  "version": "1.0",
+  "description": "Analyseur SEO & OpenGraph : aperçu OG, score SEO, hreflang, données structurées et simulateur SERP.",
+  "permissions": ["activeTab", "storage"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["style.css"]
+    }
+  ],
+  "action": {
+    "default_title": "MetaScope"
+  }
+}
